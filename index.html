@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <style>
+      #map {
+        height: 60vh;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mini Project: แผนที่น่าสนใจ</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Map</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>แผนที่แสดงจุดที่น่าสนใจ</h2>
+      <div id="map"></div>
+
+      <section id="info-display" class="info-box" style="margin-top: 20px;">
+        <h3>รายละเอียดจุดที่เลือก</h3>
+        <p>คลิกที่หมุดบนแผนที่เพื่อดูข้อมูล...</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>จัดทำโดย: จักรพงษ์ ยศปัญญา</p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
